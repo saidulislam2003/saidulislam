@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Saidul Islam — Data Analyst & ML Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=IBM+Plex+Mono:wght@300;400;500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">SI<span style="color:var(--muted)">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-controls">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-icon theme-icon--dark">☽</span>
+        <span class="theme-icon theme-icon--light">☀</span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile slide-in drawer -->
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+  <aside class="drawer" id="drawer">
+    <button class="drawer-close" id="drawerClose">✕</button>
+    <ul class="drawer-links">
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="https://github.com/saidulislam2003" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/saidulislam2003/" target="_blank">LinkedIn</a>
+      <a href="mailto:saidulih20@gmail.com">Email</a>
+    </div>
+  </aside>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-orb"></div>
+    <div class="hero-layout">
+
+      <!-- LEFT: Text -->
+      <div class="hero-inner">
+        <p class="hero-eyebrow">// Available for opportunities</p>
+        <h1 class="hero-name">Saidul<br/><span>Islam</span></h1>
+        <p class="hero-title"><span id="typed"></span><span class="typed-cursor">_</span></p>
+        <p class="hero-desc">
+          Aspiring Data Analyst and ML Engineer with a passion for turning raw data into decisions.
+          Building intelligent systems, insightful visualizations, and web applications from Dhaka, Bangladesh.
+        </p>
+        <div class="hero-cta">
+          <a href="https://github.com/saidulislam2003" target="_blank" class="btn-primary">View GitHub</a>
+          <a href="https://www.linkedin.com/in/saidulislam2003/" target="_blank" class="btn-outline">LinkedIn</a>
+          <a href="mailto:saidulih20@gmail.com" class="btn-outline">Get In Touch</a>
+        </div>
+        <div class="hero-stat-row">
+          <div class="hero-stat">
+            <div class="hero-stat-num">7+</div>
+            <div class="hero-stat-label">Projects Built</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">9+</div>
+            <div class="hero-stat-label">Certifications</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">25K+</div>
+            <div class="hero-stat-label">Records Analyzed</div>
+          </div>
+          <div class="hero-stat">
+            <div class="hero-stat-num">5.00</div>
+            <div class="hero-stat-label">HSC GPA</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Full Panel Visual -->
+      <div class="hero-panel">
+
+        <!-- Scan line animation -->
+        <div class="panel-scanline"></div>
+
+        <!-- Top bar -->
+        <div class="panel-topbar">
+          <span class="panel-topbar-dot"></span>
+          <span class="panel-topbar-dot" style="background:rgba(0,229,176,0.3)"></span>
+          <span class="panel-topbar-dot" style="background:rgba(0,153,255,0.3)"></span>
+          <span class="panel-topbar-title">profile.sys</span>
+        </div>
+
+        <!-- Photo area -->
+        <div class="panel-photo-area">
+          <!-- Corner brackets -->
+          <div class="corner corner--tl"></div>
+          <div class="corner corner--tr"></div>
+          <div class="corner corner--bl"></div>
+          <div class="corner corner--br"></div>
+
+          <!-- Replace src with your actual photo -->
+          <img src="619396072_2301926183640434_8112368687030079408_n.jpg" alt="Saidul Islam" class="panel-photo"
+               onerror="this.style.display='none'; document.getElementById('panel-fallback').style.display='flex'"/>
+
+          <!-- Fallback avatar -->
+          <div class="panel-fallback" id="panel-fallback">
+            <svg class="panel-avatar-svg" viewBox="0 0 260 290" xmlns="http://www.w3.org/2000/svg">
+
+              <!-- Rotating outer ring -->
+              <circle class="svg-ring-outer" cx="130" cy="105" r="96" fill="none"
+                stroke="rgba(0,229,176,0.07)" stroke-width="1" stroke-dasharray="5,5"/>
+              <!-- Rotating inner ring -->
+              <circle class="svg-ring-inner" cx="130" cy="105" r="74" fill="none"
+                stroke="rgba(0,229,176,0.12)" stroke-width="1" stroke-dasharray="2,6"/>
+
+              <!-- Avatar body -->
+              <circle cx="130" cy="92" r="50" fill="rgba(0,229,176,0.05)"
+                stroke="rgba(0,229,176,0.22)" stroke-width="1.5"/>
+              <!-- Head -->
+              <circle cx="130" cy="76" r="25" fill="rgba(0,229,176,0.11)"
+                stroke="rgba(0,229,176,0.32)" stroke-width="1.5"/>
+              <!-- Body shape -->
+              <path d="M88,132 Q88,112 130,110 Q172,112 172,132"
+                fill="rgba(0,229,176,0.07)" stroke="rgba(0,229,176,0.22)" stroke-width="1.5"/>
+
+              <!-- Crosshair lines -->
+              <line x1="36" y1="105" x2="84" y2="105" stroke="rgba(0,229,176,0.18)"
+                stroke-width="1" stroke-dasharray="3,3"/>
+              <line x1="176" y1="105" x2="224" y2="105" stroke="rgba(0,229,176,0.18)"
+                stroke-width="1" stroke-dasharray="3,3"/>
+              <line x1="130" y1="10" x2="130" y2="44" stroke="rgba(0,229,176,0.18)"
+                stroke-width="1" stroke-dasharray="3,3"/>
+
+              <!-- Orbiting data nodes -->
+              <circle class="svg-node" cx="36" cy="105" r="5"
+                fill="rgba(0,229,176,0.5)" stroke="rgba(0,229,176,0.8)" stroke-width="1"/>
+              <circle class="svg-node" cx="224" cy="105" r="5"
+                fill="rgba(0,229,176,0.5)" stroke="rgba(0,229,176,0.8)" stroke-width="1"/>
+              <circle class="svg-node" cx="130" cy="10" r="4"
+                fill="rgba(0,153,255,0.55)" stroke="rgba(0,153,255,0.85)" stroke-width="1"/>
+              <circle class="svg-node" cx="52" cy="178" r="4"
+                fill="rgba(0,229,176,0.4)" stroke="rgba(0,229,176,0.7)" stroke-width="1"/>
+              <circle class="svg-node" cx="208" cy="178" r="4"
+                fill="rgba(0,153,255,0.4)" stroke="rgba(0,153,255,0.7)" stroke-width="1"/>
+
+              <!-- Node connector lines -->
+              <line x1="52" y1="178" x2="93" y2="148" stroke="rgba(0,229,176,0.1)"
+                stroke-width="1" stroke-dasharray="3,3"/>
+              <line x1="208" y1="178" x2="167" y2="148" stroke="rgba(0,153,255,0.1)"
+                stroke-width="1" stroke-dasharray="3,3"/>
+
+              <!-- Chip labels -->
+              <rect x="2" y="97" width="28" height="16" rx="2"
+                fill="rgba(0,229,176,0.07)" stroke="rgba(0,229,176,0.22)" stroke-width="1"/>
+              <text x="16" y="109" text-anchor="middle" font-family="monospace"
+                font-size="7" fill="rgba(0,229,176,0.7)">ML</text>
+
+              <rect x="230" y="97" width="28" height="16" rx="2"
+                fill="rgba(0,153,255,0.07)" stroke="rgba(0,153,255,0.22)" stroke-width="1"/>
+              <text x="244" y="109" text-anchor="middle" font-family="monospace"
+                font-size="7" fill="rgba(0,153,255,0.7)">PY</text>
+
+              <rect x="96" y="0" width="68" height="16" rx="2"
+                fill="rgba(0,229,176,0.07)" stroke="rgba(0,229,176,0.22)" stroke-width="1"/>
+              <text x="130" y="12" text-anchor="middle" font-family="monospace"
+                font-size="7" fill="rgba(0,229,176,0.7)">DATA.SCI</text>
+
+              <!-- Animated bar chart -->
+              <g style="transform-origin: bottom;">
+                <rect class="svg-bar" x="50"  y="250" width="9" height="32" rx="1"
+                  fill="rgba(0,229,176,0.18)" stroke="rgba(0,229,176,0.28)" stroke-width="1"/>
+                <rect class="svg-bar" x="67"  y="238" width="9" height="44" rx="1"
+                  fill="rgba(0,229,176,0.24)" stroke="rgba(0,229,176,0.34)" stroke-width="1"/>
+                <rect class="svg-bar" x="84"  y="255" width="9" height="27" rx="1"
+                  fill="rgba(0,229,176,0.17)" stroke="rgba(0,229,176,0.27)" stroke-width="1"/>
+                <rect class="svg-bar" x="101" y="243" width="9" height="39" rx="1"
+                  fill="rgba(0,229,176,0.22)" stroke="rgba(0,229,176,0.32)" stroke-width="1"/>
+                <rect class="svg-bar" x="118" y="228" width="9" height="54" rx="1"
+                  fill="rgba(0,229,176,0.32)" stroke="rgba(0,229,176,0.45)" stroke-width="1.5"/>
+                <rect class="svg-bar" x="135" y="245" width="9" height="37" rx="1"
+                  fill="rgba(0,229,176,0.2)"  stroke="rgba(0,229,176,0.3)"  stroke-width="1"/>
+                <rect class="svg-bar" x="152" y="234" width="9" height="48" rx="1"
+                  fill="rgba(0,153,255,0.22)" stroke="rgba(0,153,255,0.32)" stroke-width="1"/>
+                <rect class="svg-bar" x="169" y="252" width="9" height="30" rx="1"
+                  fill="rgba(0,153,255,0.16)" stroke="rgba(0,153,255,0.26)" stroke-width="1"/>
+                <rect class="svg-bar" x="186" y="240" width="9" height="42" rx="1"
+                  fill="rgba(0,153,255,0.2)"  stroke="rgba(0,153,255,0.3)"  stroke-width="1"/>
+              </g>
+
+              <!-- Baseline -->
+              <line x1="44" y1="282" x2="202" y2="282"
+                stroke="rgba(0,229,176,0.2)" stroke-width="1"/>
+
+            </svg>
+            <p class="panel-fallback-hint">Add your photo<br/><small>set src="your-photo.jpg"</small></p>
+          </div>
+
+          <!-- Overlay gradient at bottom -->
+          <div class="panel-photo-overlay"></div>
+
+          <!-- Name tag over photo -->
+          <div class="panel-nametag">
+            <div class="panel-nametag-name">Saidul Islam</div>
+            <div class="panel-nametag-role"><span class="badge-dot"></span> Open to Work</div>
+          </div>
+        </div>
+
+        <!-- Stats row -->
+        <div class="panel-stats">
+          <div class="panel-stat">
+            <div class="panel-stat-val">7+</div>
+            <div class="panel-stat-key">Projects</div>
+          </div>
+          <div class="panel-stat-divider"></div>
+          <div class="panel-stat">
+            <div class="panel-stat-val">9+</div>
+            <div class="panel-stat-key">Certs</div>
+          </div>
+          <div class="panel-stat-divider"></div>
+          <div class="panel-stat">
+            <div class="panel-stat-val">5.0</div>
+            <div class="panel-stat-key">GPA</div>
+          </div>
+        </div>
+
+        <!-- Skill chips -->
+        <div class="panel-chips">
+          <span class="panel-chip">Python</span>
+          <span class="panel-chip">SQL</span>
+          <span class="panel-chip panel-chip--blue">Scikit-learn</span>
+          <span class="panel-chip panel-chip--blue">TensorFlow</span>
+          <span class="panel-chip">Power BI</span>
+          <span class="panel-chip">Django</span>
+          <span class="panel-chip panel-chip--blue">Pandas</span>
+          <span class="panel-chip">Streamlit</span>
+        </div>
+
+        <!-- Location / status footer -->
+        <div class="panel-footer">
+          <div class="panel-footer-item">
+            <span class="panel-footer-icon">◎</span> Dhaka, Bangladesh
+          </div>
+          <div class="panel-footer-item">
+            <span class="panel-footer-icon" style="color:var(--accent2)">⬡</span> IUBAT · CSE
+          </div>
+          <div class="panel-footer-item">
+            <span class="panel-footer-icon">✦</span> github.com/saidulislam2003
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="section-wrap">
+      <div class="section-label">02 — Technical Stack</div>
+      <h2 class="section-heading">Tools I <em>Work With</em></h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🐍</div>
+          <div class="skill-card-title">Languages & Data</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">NumPy</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🤖</div>
+          <div class="skill-card-title">Machine Learning</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">TensorFlow</span>
+            <span class="skill-tag">Random Forest</span>
+            <span class="skill-tag">XGBoost</span>
+            <span class="skill-tag">PCA</span>
+            <span class="skill-tag">KNN</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">📊</div>
+          <div class="skill-card-title">Visualization & BI</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Looker Studio</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+            <span class="skill-tag">Excel</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🌐</div>
+          <div class="skill-card-title">Web & Deployment</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Django</span>
+            <span class="skill-tag">Streamlit</span>
+            <span class="skill-tag">HTML/CSS</span>
+            <span class="skill-tag">Bootstrap</span>
+            <span class="skill-tag">MLflow</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">🗄️</div>
+          <div class="skill-card-title">Databases & Tools</div>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Git / GitHub</span>
+            <span class="skill-tag">Jupyter</span>
+            <span class="skill-tag">VS Code</span>
+          </div>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-icon">⚙️</div>
+          <div class="skill-card-title">ML Techniques</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Feature Engineering</span>
+            <span class="skill-tag">Ensemble Learning</span>
+            <span class="skill-tag">Regularization</span>
+            <span class="skill-tag">Gradient Descent</span>
+            <span class="skill-tag">EDA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="section-wrap">
+      <div class="section-label">03 — Work Experience</div>
+      <h2 class="section-heading">Where I've <em>Contributed</em></h2>
+      <div class="exp-item reveal">
+        <div class="exp-meta">
+          <div class="exp-company">Prodigy Infotech</div>
+          <div class="exp-date">Sept 2024 – Oct 2024</div>
+        </div>
+        <div class="exp-body">
+          <div class="exp-role">Data Scientist Intern <span style="color:var(--muted);font-size:0.85rem;font-family:'IBM Plex Mono',monospace;">(Remote)</span></div>
+          <ul class="exp-bullets">
+            <li>Performed end-to-end data analysis on real-world datasets using Pandas, NumPy, Seaborn, and Matplotlib.</li>
+            <li>Cleaned, transformed, and analyzed 25,000+ records to extract actionable business insights.</li>
+            <li>Built data visualization dashboards to identify key business performance drivers.</li>
+            <li>Practiced feature engineering, correlation analysis, and comprehensive model evaluation.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="section-wrap">
+      <div class="section-label">04 — Selected Projects</div>
+      <h2 class="section-heading">Things I've <em>Built</em></h2>
+      <div class="projects-grid">
+        <a href="https://github.com/saidulislam2003/Pregnancy-Risk-Level-Predictor" target="_blank" class="project-card reveal">
+          <div class="project-link-icon">↗</div>
+          <div class="project-num">01</div>
+          <div class="project-title">Pregnancy Risk Detection System</div>
+          <div class="project-desc">Supervised ML classification system for early maternal risk detection. Covers data preprocessing, feature selection, and model evaluation.</div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Scikit-learn</span>
+            <span class="project-tag">Classification</span>
+            <span class="project-tag">Healthcare</span>
+          </div>
+        </a>
+        <a href="https://github.com/saidulislam2003/Breast-Cancer-Detector" target="_blank" class="project-card reveal">
+          <div class="project-link-icon">↗</div>
+          <div class="project-num">02</div>
+          <div class="project-title">Breast Cancer Detection</div>
+          <div class="project-desc">Binary classification model distinguishing malignant vs benign tumors. Feature scaling, train-test split, and performance metrics applied.</div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">ML</span>
+            <span class="project-tag">Binary Classification</span>
+          </div>
+        </a>
+        <a href="https://github.com/saidulislam2003/Titanic-Survival-Prediction" target="_blank" class="project-card reveal">
+          <div class="project-link-icon">↗</div>
+          <div class="project-num">03</div>
+          <div class="project-title">Titanic Survival Prediction</div>
+          <div class="project-desc">Classic ML challenge solved with advanced classification models and sophisticated feature engineering techniques.</div>
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Feature Engineering</span>
+            <span class="project-tag">EDA</span>
+          </div>
+        </a>
+        <a href="https://github.com/saidulislam2003/Covid-19-Analysis" target="_blank" class="project-card reveal">
+          <div class="project-link-icon">↗</div>
+          <div class="project-num">04</div>
+          <div class="project-title">COVID-19 Data Analysis</div>
+          <div class="project-desc">Global trend analysis with interactive visual dashboards tracking case progression and mortality rates worldwide.</div>
+          <div class="project-tags">
+            <span class="project-tag">Pandas</span>
+            <span class="project-tag">Matplotlib</span>
+            <span class="project-tag">Dashboard</span>
+          </div>
+        </a>
+        <a href="https://github.com/saidulislam2003/Suicide-Rate-Analysis" target="_blank" class="project-card reveal">
+          <div class="project-link-icon">↗</div>
+          <div class="project-num">05</div>
+          <div class="project-title">Suicide Rate Analysis</div>
+          <div class="project-desc">Exploratory data analysis with country-wise statistical exploration of global mental health and socioeconomic correlations.</div>
+          <div class="project-tags">
+            <span class="project-tag">EDA</span>
+            <span class="project-tag">Seaborn</span>
+            <span class="project-tag">Statistics</span>
+          </div>
+        </a>
+        <a href="https://github.com/saidulislam2003/Little-Lemon-Restaurant" target="_blank" class="project-card reveal">
+          <div class="project-link-icon">↗</div>
+          <div class="project-num">06</div>
+          <div class="project-title">Little Lemon Restaurant App</div>
+          <div class="project-desc">Full-stack dynamic CRUD-based restaurant management web application built with the Django framework.</div>
+          <div class="project-tags">
+            <span class="project-tag">Django</span>
+            <span class="project-tag">Python</span>
+            <span class="project-tag">Full-Stack</span>
+            <span class="project-tag">CRUD</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="section-wrap">
+      <div class="section-label">05 — Education</div>
+      <h2 class="section-heading">Academic <em>Journey</em></h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-level">Undergraduate</div>
+          <div class="edu-degree">BSc in Computer Science & Engineering</div>
+          <div class="edu-school">International University of Business Agriculture and Technology (IUBAT)</div>
+          <div class="edu-year">2023 – 2027</div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-level">Higher Secondary</div>
+          <div class="edu-degree">Higher Secondary Certificate (HSC)</div>
+          <div class="edu-school">Dhaka Residential Model College (DRMC)</div>
+          <div class="edu-year">2020 – 2022</div>
+          <div class="edu-gpa">GPA 5.00 / 5.00</div>
+        </div>
+        <div class="edu-card reveal">
+          <div class="edu-level">Secondary</div>
+          <div class="edu-degree">Secondary School Certificate (SSC)</div>
+          <div class="edu-school">Dhaka Residential Model College (DRMC)</div>
+          <div class="edu-year">2018 – 2020</div>
+          <div class="edu-gpa">GPA 5.00 / 5.00</div>
+        </div>
+      </div>
+
+      <div style="margin-top: 70px;">
+        <div class="section-label" style="margin-bottom:32px;">06 — Certifications</div>
+        <div class="certs-list">
+          <div class="cert-item reveal">Data Analytics — Deeplearning.AI</div>
+          <div class="cert-item reveal">Data Analytics Essentials — IBM</div>
+          <div class="cert-item reveal">Data Visualization & Dashboard Essentials — IBM</div>
+          <div class="cert-item reveal">Excel Essentials for Data Analytics — IBM</div>
+          <div class="cert-item reveal">Python for Data Science and AI — IBM</div>
+          <div class="cert-item reveal">Python Project for Data Science — IBM</div>
+          <div class="cert-item reveal">Meta Django Web Framework</div>
+          <div class="cert-item reveal">QBronze Diploma — Quantum Computing, QWorld</div>
+          <div class="cert-item reveal">Standard Chartered Inter-School Programming Contest 2020 — Rank 43</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-wrap">
+      <div class="section-label">07 — Contact</div>
+      <div class="contact-inner">
+        <div class="reveal">
+          <h2 class="contact-heading">Let's <em>Build</em><br/>Something.</h2>
+          <p class="contact-text">
+            Open to internships, freelance projects, and collaborations in data science,
+            machine learning, and web development. Let's connect.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:saidulih20@gmail.com" class="contact-link">
+              <span class="contact-link-label">Email</span>
+              <span class="contact-link-val">saidulih20@gmail.com</span>
+            </a>
+            <a href="mailto:23303345@iubat.edu" class="contact-link">
+              <span class="contact-link-label">Uni Email</span>
+              <span class="contact-link-val">23303345@iubat.edu</span>
+            </a>
+            <a href="https://github.com/saidulislam2003" target="_blank" class="contact-link">
+              <span class="contact-link-label">GitHub</span>
+              <span class="contact-link-val">github.com/saidulislam2003</span>
+            </a>
+            <a href="https://www.linkedin.com/in/saidulislam2003/" target="_blank" class="contact-link">
+              <span class="contact-link-label">LinkedIn</span>
+              <span class="contact-link-val">linkedin.com/in/saidulislam2003</span>
+            </a>
+            <a href="tel:+8801623750823" class="contact-link">
+              <span class="contact-link-label">Phone</span>
+              <span class="contact-link-val">+880 1623 750823</span>
+            </a>
+          </div>
+        </div>
+        <div class="contact-visual reveal">
+          <div class="contact-visual-text">DATA<br/>ML<br/>WEB</div>
+          <div class="contact-visual-badge">// Available Now</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-copy">© 2025 Saidul Islam — Dhaka, Bangladesh</div>
+    <div class="footer-socials">
+      <a href="https://github.com/saidulislam2003" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/saidulislam2003/" target="_blank">LinkedIn</a>
+      <a href="mailto:saidulih20@gmail.com">Email</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
