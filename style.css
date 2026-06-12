@@ -3,27 +3,27 @@
 ===================== */
 :root {
   /* Backgrounds */
-  --bg: #02304e;
-  --bg2: #02304e;
-  --bg3: #02304e;
+  --bg:  #020f17;
+  --bg2: #031420;
+  --bg3: #041a29;
 
   /* Text */
   --text: #f4faf7;
   --text-secondary: #96f8c7;
-  --muted: #fbfdfc;
+  --muted: #5a8070;
 
   /* Accents */
-  --accent: #06d439;
-  --accent2: #06d439;
-  --accent3: #06d439;
+  --accent: #00e5b0;
+  --accent2: #0099ff;
+  --accent3: #00e5b0;
 
   /* UI */
   --border: rgba(0, 229, 176, 0.12);
   --glow: 0 0 30px rgba(0, 229, 176, 0.15);
-  --nav-bg: #02304e;
+  --nav-bg: rgba(2, 15, 23, 0.92);
 
   /* Component surfaces */
-  --card-bg: var(--bg3);
+  --card-bg: #041a29;
   --chip-bg: rgba(0, 229, 176, 0.07);
   --chip-border: rgba(0, 229, 176, 0.18);
   --chip-bg-blue: rgba(0, 153, 255, 0.08);
@@ -31,28 +31,6 @@
 
   /* Grid pattern */
   --grid-color: rgba(0, 229, 176, 0.03);
-}
-
-[data-theme="light"] {
-  --bg: #ffffff;
-  --bg2: #fafafa;
-  --bg3: #d8e5df;
-
-  --text: #0d1f18;
-  --text-secondary: #3a6055;
-  --muted: #4a7060;
-
-  --border: rgba(0, 140, 100, 0.2);
-  --glow: 0 0 30px rgba(0, 180, 140, 0.2);
-  --nav-bg: rgba(240, 244, 242, 0.92);
-
-  --card-bg: var(--bg3);
-  --chip-bg: rgba(0, 160, 120, 0.1);
-  --chip-border: rgba(0, 160, 120, 0.25);
-  --chip-bg-blue: rgba(0, 100, 200, 0.08);
-  --chip-border-blue: rgba(0, 100, 200, 0.2);
-
-  --grid-color: rgba(0, 140, 100, 0.06);
 }
 
 /* =====================
@@ -73,7 +51,6 @@ body {
   font-weight: 300;
   overflow-x: hidden;
   cursor: none;
-  transition: background 0.4s ease, color 0.4s ease;
 }
 
 /* =====================
@@ -162,7 +139,7 @@ nav {
 .nav-links a:hover { color: var(--accent); }
 
 /* =====================
-   THEME TOGGLE BUTTON
+   HAMBURGER BUTTON
 ===================== */
 .nav-controls {
   display: flex;
@@ -170,42 +147,6 @@ nav {
   gap: 14px;
 }
 
-.theme-toggle {
-  background: none;
-  border: 1px solid var(--border);
-  width: 38px; height: 38px;
-  border-radius: 50%;
-  cursor: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: border-color 0.2s, background 0.2s;
-  position: relative;
-  flex-shrink: 0;
-}
-
-.theme-toggle:hover {
-  border-color: var(--accent);
-  background: var(--chip-bg);
-}
-
-.theme-icon {
-  position: absolute;
-  font-size: 1rem;
-  transition: opacity 0.3s, transform 0.3s;
-  line-height: 1;
-  color: var(--text);
-}
-
-.theme-icon--dark  { opacity: 1;  transform: rotate(0deg); }
-.theme-icon--light { opacity: 0;  transform: rotate(90deg); }
-
-[data-theme="light"] .theme-icon--dark  { opacity: 0;  transform: rotate(-90deg); }
-[data-theme="light"] .theme-icon--light { opacity: 1;  transform: rotate(0deg); }
-
-/* =====================
-   HAMBURGER BUTTON
-===================== */
 .hamburger {
   display: none;
   flex-direction: column;
