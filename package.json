@@ -1,0 +1,20 @@
+{
+  "name": "saidulislam",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Saidul Islam - Data Analyst & ML Engineer",
+  "type": "module",
+  "scripts": {
+    "dev": "npx serve .",
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "portfolio",
+    "data-analyst",
+    "ml-engineer"
+  ],
+  "author": "Saidul Islam",
+  "license": "MIT",
+  "dependencies": {
+    "@vercel/speed-insights": "^1.1.0"
+  }
+}
